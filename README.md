@@ -87,7 +87,7 @@ Authentication events (auth_events) are generated when users attempt to log in. 
 - **Batch Processing**: Sends data in batches to optimize network use and processing time.
 - **Flexible Configuration**: Easy to configure with environment variables for Kafka, Schema Registry, and more.
 
-## Getting Started
+## Getting Started with Docker
 
 Follow these steps to get the application running with Docker:
 
@@ -103,6 +103,20 @@ Make sure Kafka and Schema Registry are running and accessible. Replace `localho
 
 ```
 docker run --network="host" --name eventmusic-container stefen2020/eventmusic:v1
+```
+
+## Getting Started manually
+
+Make sure Kafka and Schema Registry are running and accessible. Replace `localhost` with your Kafka and Schema Registry hosts if necessary.
+
+```
+python listen_events.py
+
+python page_view_events.py
+
+python auth_events.py
+
+python main.py
 ```
 
 ## Contributing
@@ -124,3 +138,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - **Name**: Stefen Taime
 - **Email**: [stefentaime@gmail.com](mailto:stefen@example.com)
 - **Project URL**: [https://github.com/Stefen-Taime/eventmusic](https://github.com/Stefen-Taime/eventmusic)
+- **Project HUB DOCKER URL**: [https://hub.docker.com/r/stefen2020/eventmusic](https://hub.docker.com/r/stefen2020/eventmusic)
