@@ -1,7 +1,7 @@
 
 # EventMusic Producer
 
-EventMusic Producer is a Dockerized application designed to read data from CSV files and output them to a Kafka topic, using Avro schemas for data serialization. It integrates seamlessly with Kafka and the Schema Registry to manage the flow of event data linked to music event information.
+EventMusic Producer is a Dockerized application designed to read data and output them to a Kafka topic, using Avro schemas for data serialization. It integrates seamlessly with Kafka and the Schema Registry to manage the flow of event data linked to music event information.
 
 #### Event types
 Page view events (page_view_events) are generated when users browse the site. They are structured as follows:
