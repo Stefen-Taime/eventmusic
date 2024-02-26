@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "ListenEventKey",
+  "namespace": "enventM.com",
+  "fields": [
+    {
+      "name": "sessionid",
+      "type": "string"
+    }
+  ]
+}

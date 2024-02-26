@@ -1,0 +1,7 @@
+faker
+pandas
+confluent-kafka
+python-dotenv
+kafka-python
+requests
+fastavro

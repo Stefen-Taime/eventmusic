@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "name": "PageViewKey",
+  "namespace": "enventM.com",
+  "fields": [
+    {"name": "sessionId", "type": "string"}
+  ]
+}
