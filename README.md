@@ -105,10 +105,6 @@ Make sure Kafka and Schema Registry are running and accessible. Replace `localho
 docker run --network="host" --name eventmusic-container stefen2020/eventmusic:v1
 ```
 
-## Usage
-
-Place your CSV files in a known directory and ensure your Docker container has access to this directory, possibly through Docker volumes. The application expects CSV files to follow a specific format corresponding to the Avro schema.
-
 ## Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -125,6 +121,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-- **Name**: Stefen
-- **Email**: [stefen@example.com](mailto:stefen@example.com)
-- **Project URL**: [https://github.com/stefen2020/eventmusic](https://github.com/stefen2020/eventmusic)
+- **Name**: Stefen Taime
+- **Email**: [stefentaime@gmail.com](mailto:stefen@example.com)
+- **Project URL**: [https://github.com/Stefen-Taime/eventmusic](https://github.com/Stefen-Taime/eventmusic)
