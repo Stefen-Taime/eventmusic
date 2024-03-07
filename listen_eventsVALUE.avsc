@@ -1,7 +1,7 @@
 {
   "type": "record",
   "name": "ListenEventValue",
-  "namespace": "enventM.com",
+  "namespace": "eventM.com",
   "fields": [
     {
       "name": "artist",
@@ -37,19 +37,23 @@
     },
     {
       "name": "city",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "zip",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "state",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "country",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "userAgent",
@@ -65,23 +69,28 @@
     },
     {
       "name": "userId",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "lastName",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "firstName",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "gender",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "registration",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     }
   ]
 }
