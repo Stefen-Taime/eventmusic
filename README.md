@@ -11,8 +11,6 @@ Page view events (page_view_events) are generated when users browse the site. Th
   "sessionId": "Session identifier",
   "page": "URL of the page visited",
   "auth": "Authentication status (Logged In/Logged Out)",
-  "method": "HTTP method used for the request",
-  "status": "HTTP status code of the response",
   "level": "Subscription type (free/paid)",
   "itemInSession": "Number of items in the session",
   "city": "User's city",
@@ -60,23 +58,24 @@ Listen events (listen_events) are generated when users listen to songs. Their st
 Authentication events (auth_events) are generated when users attempt to log in. Structure :
 ```
 {
-  "ts": "Timestamp de l'événement",
-  "sessionId": "Identifiant de la session",
-  "level": "Type d'abonnement",
-  "itemInSession": "Nombre d'éléments dans la session",
+  "ts": "Timestamp of the event",
+  "sessionId": "Session identifier",
+  "level": "Subscription type",
+  "itemInSession": "Number of items in session",
   "city": "Ville",
-  "zip": "Code postal",
-  "state": "État/région",
-  "userAgent": "Agent utilisateur du navigateur",
+  "zip": "Zip code",
+  "state": "State/Region",
+  "userAgent": "Browser user agent",
   "lon": "Longitude",
   "lat": "Latitude",
-  "userId": "Identifiant de l'utilisateur",
-  "lastName": "Nom de famille",
-  "firstName": "Prénom",
+  "userId": "User identifier",
+  "lastName": "Last name",
+  "firstName": "First name",
   "gender": "Sexe",
-  "registration": "Timestamp de l'inscription",
-  "success": "Succès de l'authentification (True/False)"
+  "registration": "Registration timestamp",
+  "success": "Successful authentication (True/False)".
 }
+
 ```
 
 ## Features
@@ -94,7 +93,7 @@ Follow these steps to get the application running with Docker:
 ### Pull the Docker Image
 
 ```
-docker pull stefen2020/eventmusic:v1
+docker pull stefen2020/eventmusic:latest
 ```
 
 ### Run the Container
@@ -102,7 +101,7 @@ docker pull stefen2020/eventmusic:v1
 Make sure Kafka and Schema Registry are running and accessible. Replace `localhost` with your Kafka and Schema Registry hosts if necessary.
 
 ```
-docker run --network="host" --name eventmusic-container stefen2020/eventmusic:v1
+docker run --network="host" --name eventmusic-container stefen2020/eventmusic:latest
 ```
 
 ## Getting Started manually
