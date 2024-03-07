@@ -40,35 +40,42 @@
     },
     {
       "name": "lon",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "lat",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "userId",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "lastName",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "firstName",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "gender",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "registration",
-      "type": "string"
+      "type": ["null", "string"],
+      "default": null
     },
     {
       "name": "success",
-      "type": "string"
+      "type": "boolean"
     }
   ]
 }
