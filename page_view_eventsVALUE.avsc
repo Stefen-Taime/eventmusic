@@ -3,14 +3,35 @@
   "name": "PageViewEvent",
   "namespace": "enventM.com",
   "fields": [
-    {"name": "ts", "type": "int"},
-    {"name": "sessionId", "type": "string"},
-    {"name": "page", "type": "string"},
-    {"name": "auth", "type": "string"},
-    {"name": "method", "type": "string"},
-    {"name": "status", "type": "string"},
-    {"name": "level", "type": "string"},
-    {"name": "itemInSession", "type": "string"},
+    {
+      "name": "ts",
+      "type": "int"
+    },
+    {
+      "name": "sessionId",
+      "type": "string"
+    },
+    {
+      "name": "page",
+      "type": "string"
+    },
+    {
+      "name": "auth",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "level",
+      "type": "string"
+    },
+    {
+      "name": "itemInSession",
+      "type": "string"
+    },
     {
       "name": "city",
       "type": ["null", "string"],
@@ -26,16 +47,57 @@
       "type": ["null", "string"],
       "default": null
     },
-    {"name": "userAgent", "type": "string"},
-    {"name": "lon", "type": "string"},
-    {"name": "lat", "type": "string"},
-    {"name": "userId", "type": "string"},
-    {"name": "lastName", "type": "string"},
-    {"name": "firstName", "type": "string"},
-    {"name": "gender", "type": "string"},
-    {"name": "registration", "type": "string"},
-    {"name": "artist", "type": "string"},
-    {"name": "song", "type": "string"},
-    {"name": "duration", "type": "string"}
+    {
+      "name": "userAgent",
+      "type": "string"
+    },
+    {
+      "name": "lon",
+      "type": "string"
+    },
+    {
+      "name": "lat",
+      "type": "string"
+    },
+    {
+      "name": "userId",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "lastName",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "firstName",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "gender",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "registration",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "artist",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "song",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "duration",
+      "type": ["null", "string"],
+      "default": null
+    }
   ]
 }
