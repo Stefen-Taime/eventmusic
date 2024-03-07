@@ -40,7 +40,7 @@ def send_csv_data_avro(topic, filename, key_serializer, value_serializer):
         for row in reader:
             key = str(uuid.uuid4()) if topic == 'page_view_events' else row.get('sessionid', str(uuid.uuid4()))
             data = {
-                k: str(v) if k in ['sessionId', 'itemInSession', 'registration', 'page', 'auth', 'method', 'status', 'level', 'city', 'zip', 'state', 'userAgent', 'lon', 'lat', 'userId', 'lastName', 'firstName', 'gender', 'artist', 'song', 'duration'] else int(v) if k == 'ts' else v
+                k: str(v) if k in ['sessionId', 'itemInSession', 'registration', 'page', 'auth', 'status', 'level', 'city', 'zip', 'state', 'userAgent', 'lon', 'lat', 'userId', 'lastName', 'firstName', 'gender', 'artist', 'song', 'duration'] else int(v) if k == 'ts' else v
                 for k, v in row.items()
             }
             batch.append((key, data))
@@ -50,7 +50,7 @@ def send_csv_data_avro(topic, filename, key_serializer, value_serializer):
                     producer.produce(topic=topic, key=key, value=data, on_delivery=delivery_report)
                 producer.flush()
                 batch = []
-                time.sleep(30)
+                time.sleep(1)
 
         if batch:
             for key, data in batch:
